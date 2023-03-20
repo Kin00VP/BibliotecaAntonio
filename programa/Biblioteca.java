@@ -20,7 +20,7 @@ public class Biblioteca {
 	 * Nos devuelve el arraylist de manera literal
 	 * @return ArrayList<Libro>
 	 */
-	public static ArrayList<Libro> getBiblio() {
+	public ArrayList<Libro> getBiblio() {
 		return biblio;
 	}
 
@@ -32,7 +32,7 @@ public class Biblioteca {
 	 * @param biblio ArrayList de libros
 	 */
 	@XmlElement(name = "Libro")
-	public static void setBiblio(ArrayList<Libro> biblio) {
+	public void setBiblio(ArrayList<Libro> biblio) {
 		Biblioteca.biblio = biblio;
 	}
 	
