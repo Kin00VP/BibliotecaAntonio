@@ -8,7 +8,7 @@ public class ObtenerDatoXXX {
 
 	public static class ObtenerDatoString {
 
-		public String[] extraer(File archivo) {
+		public static String[] extraer(File archivo) {
 
 			String datichis = "";
 			String[] datos = null;
@@ -36,11 +36,10 @@ public class ObtenerDatoXXX {
 
 	public static class ObtenerDatoDouble {
 		
-		@SuppressWarnings("null")
-		public double[] extraer(File archivo) {
+		public static double[] extraer(File archivo) {
 
 			String precichis = "";
-			double[] precios_en_formato_double = null;
+			double[] precios_en_formato_double = new double[7];
 
 			try (BufferedReader bf = new BufferedReader(new FileReader(archivo))) {
 

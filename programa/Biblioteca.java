@@ -34,7 +34,5 @@ public class Biblioteca {
 	@XmlElement(name = "Libro")
 	public void setBiblio(ArrayList<Libro> biblio) {
 		Biblioteca.biblio = biblio;
-	}
-	
-	
+	}	
 }
